@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "nft-metadata-proxy-1",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "tumf <y.takahara@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.11",
+    "prettier": "^1.18.2"
+  }
+}
