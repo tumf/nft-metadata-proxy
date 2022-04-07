@@ -25,7 +25,12 @@ async function handleRequest(request) {
   }
 
   if (request.method == "OPTIONS") {
-    return new Response(null, { headers: { Allow: "GET, OPTIONS" } });
+    return new Response(null, {
+      headers: {
+        "Access-Control-Allow-Origin": origin,
+        "Access-Control-Allow-Methods": "GET",
+      },
+    });
   }
 
   if (request.method !== "GET") return MethodNotAllowed(request);
