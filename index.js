@@ -19,7 +19,7 @@ function MethodNotAllowed(request) {
 }
 
 async function handleRequest(request) {
-  const origin = request.headers.get("Origin");
+  let origin = request.headers.get("Origin");
   if (origin != null && !origin.match(RE_ORIGINS)) {
     origin = "*";
   }
