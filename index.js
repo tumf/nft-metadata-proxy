@@ -1,6 +1,3 @@
-const RE_ORIGINS = ".*";
-const CACHE_TTL = 600;
-
 addEventListener("fetch", event => {
   event.respondWith(
     handleRequest(event.request).catch(

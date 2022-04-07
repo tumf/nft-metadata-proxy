@@ -1,4 +1,4 @@
-name = "nft-metadata-proxy-1"
+name = "metadata-proxy"
 type = "javascript"
 
 account_id = ""
@@ -6,3 +6,7 @@ workers_dev = true
 route = ""
 zone_id = ""
 compatibility_date = "2022-04-03"
+
+[vars]
+CACHE_TTL = 600
+RE_ORIGINS = "https*://(localhost:3000|(alpha\\.|beta\\.|)ketos\\.app)"
